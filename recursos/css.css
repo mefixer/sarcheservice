@@ -1,0 +1,676 @@
+@font-face {
+    font-family: "GothamRounded";
+    src: url("font/GothamRounded-Bold.otf") format("opentype"),
+        url("font/GothamRounded-BoldItalic.otf") format("opentype"),
+        url("font/GothamRounded-Book.otf") format("opentype"),
+        url("font/GothamRounded-BookItalic.otf") format("opentype"),
+        url("font/GothamRounded-Light.otf") format("opentype"),
+        url("font/GothamRounded-LightItalic.otf") format("opentype"),
+        url("font/GothamRounded-Medium.otf") format("opentype"),
+        url("font/GothamRounded-MediumItalic.otf") format("opentype");
+}
+
+body {
+    background-color: white;
+    font-family: 'GothamRounded', sans-serif;
+}
+
+
+@media screen and (min-width: 1024px) {
+    /* Estilos a aplicar en pantallas con un ancho mínimo de 1024 pixels */
+
+    .logo {
+        object-fit: cover;
+        padding-left: 10%;
+        width: 40%;
+
+    }
+
+    .logo-footer {
+        position: absolute;
+        display: block;
+        width: 100%;
+    }
+
+    .navbar {
+        height: 12vh;
+        background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+
+    #slideportada .carousel-inner,
+    .carousel-portada,
+    .carousel-item.active {
+        object-fit: cover;
+        height: 100vh;
+    }
+
+    .btn-nav {
+        white-space: nowrap;
+        display: inline-block;
+        text-decoration: none;
+        color: #0c126e;
+        font-weight: bolder;
+        font-size: x-large;
+        cursor: pointer;
+    }
+
+    .titulo {
+        color: #0c126e;
+        font-weight: bolder;
+        justify-content: center;
+        display: inline-block;
+    }
+
+    .btn-servicios {
+        background-color: red;
+        color: white;
+        border-style: none;
+        border-radius: 20px;
+        font-weight: bolder;
+        width: 100%;
+        height: 4vh;
+    }
+
+    .footer {
+        display: block;
+        position: relative;
+        height: 20vh;
+    }
+
+    .footer::after {
+        content: "";
+        background: url('img/c_code.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .menu-button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-button__line {
+        display: block;
+        background-color: red;
+        height: 5px;
+        width: 50px;
+        margin: 6px 20px;
+        border-radius: 20px;
+    }
+
+    .cont-cliente {
+        display: inline-block;
+        width: fit-content;
+    }
+
+    .ajust {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .cont-footer-left {
+        position: absolute;
+        display: block;
+        padding-top: 3%;
+    }
+
+    .cont-footer-right {
+        position: absolute;
+        display: block;
+        padding-top: 2%;
+    }
+
+    .cont-footer-center {
+        padding-top: 10%;
+    }
+
+    .card {
+        width: 15rem;
+        object-fit: cover;
+        border-color: black;
+        border-style: solid;
+        border-radius: 20px;
+        margin-bottom: 2px;
+        box-shadow: -1px -1px 2rem 1px #afafbf,
+        1px -1px 2rem 1px #afafbf,
+        -1px 1px 2rem 1px #afafbf,
+        1px 1px 2rem 1px #afafbf;
+    }
+    .card:hover{
+        opacity: 0.2;
+    }
+
+    .card-img-top {
+        border-radius: 20px;
+        max-width: fit-content;
+    }
+
+    .greater-than {
+        position: relative;
+        visibility: visible;
+        object-fit: cover;
+        font-size: 30px;
+        color: red;
+    }
+
+    .circulo {
+        visibility: visible;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border-color: red;
+        border-style: solid;
+        border-radius: 100%;
+    }
+
+    .carousel-indicators button {
+        background-color: red;
+    }
+
+    .d-software {
+        width: 100%;
+        position: relative;
+        height: 70vh;
+        border-radius: 20px;
+        box-shadow: -1px -1px 2rem 1px #afafbf,
+            1px -1px 2rem 1px #afafbf,
+            -1px 1px 2rem 1px #afafbf,
+            1px 1px 2rem 1px #afafbf;
+    }
+
+    .d-software::after {
+        content: "";
+        background: url('img/c_view.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .boton-cerrar {
+        display: flex;
+        position: absolute;
+        padding-left: 5%;
+        z-index: 1;
+    }
+
+    .somos-fondo {
+        width: 100%;
+        position: relative;
+        height: 80vh;
+    }
+
+    .somos-fondo::after {
+        content: "";
+        background: url('img/somos.jpg');
+        background-size: 125vmin;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        position: absolute;
+    }
+
+    .contacto-fondo {
+        width: 100%;
+        position: relative;
+        height: 80vh;
+    }
+
+    .contacto-fondo::after {
+        content: "";
+        background: url('img/contacto.jpg');
+        background-size: 125vmin;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        position: absolute;
+    }
+
+    #slideportada,
+    .carousel-inner,
+    .carousel-portada,
+    .carousel-item.active {
+        height: 100vh;
+    }
+
+    #slideservicios {
+        height: 90vh;
+    }
+
+    .btn-prev {
+        position: absolute;
+    }
+
+    .text-cont {
+        position: relative;
+        display: flexbox;
+    }
+
+    .contenido-text {
+        text-size-adjust: initial;
+        position: absolute;
+        font-size: 16px;
+        text-align: justify;
+        font-weight: bolder;
+        color: #0c126e;
+    }
+
+    .btn-contacto {
+        background-color: red;
+        color: white;
+        border-radius: 20px;
+        width: 60%;
+        height: 30px;
+        border-style: none;
+    }
+
+    .btn-contacto:hover {
+        background-color: #0c126e;
+    }
+
+    .input-contacto {
+        width: 60%;
+        height: 4vh;
+        background-color: #8ab5d8;
+        border-radius: 20px;
+        border-style: none;
+    }
+
+    .input-contacto::placeholder {
+        text-align: center;
+        color: white;
+    }
+
+    .textarea-contacto {
+        width: 60%;
+        height: 10vh;
+        background-color: #8ab5d8;
+        border-radius: 20px;
+        border-style: none;
+    }
+
+    .textarea-contacto::placeholder {
+        padding-top: 10%;
+        text-align: center;
+        color: white;
+    }
+
+    .hide-btn {
+        background: transparent;
+        border-style: none
+    }
+
+    .flechas {
+        position: relative;
+        visibility: visible;
+        object-fit: cover;
+        font-size: 30px;
+        color: white;
+    }
+
+    .circulo-contacto {
+        visibility: visible;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-color: red;
+        border-style: solid;
+        border-radius: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos a aplicar en pantallas con un ancho entre 768 y 1024 pixels */
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos a aplicar en pantallas con un ancho entre 768 y 1024 pixels */
+
+    .logo {
+        object-fit: cover;
+        width: 40%;
+
+    }
+
+    .logo-footer {
+        position: absolute;
+        display: block;
+        width: 100%;
+    }
+
+    .navbar {
+        height: 30vh;
+        background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+
+    #slideportada,
+    .carousel-inner,
+    .carousel-portada,
+    .carousel-item.active {
+        height: 100vh;
+    }
+
+    .btn-nav {
+        white-space: nowrap;
+        display: inline-block;
+        text-decoration: none;
+        color: #0c126e;
+        font-weight: bolder;
+        font-size: x-large;
+        cursor: pointer;
+    }
+
+    .titulo {
+        color: #0c126e;
+        font-weight: bolder;
+        justify-content: center;
+        display: inline-block;
+    }
+
+    .btn-servicios {
+        background-color: red;
+        color: white;
+        border-style: none;
+        border-radius: 20px;
+        font-weight: bolder;
+        width: 100%;
+        height: 4vh;
+    }
+
+    .footer {
+        display: block;
+        position: relative;
+        height: 20vh;
+    }
+
+    .footer::after {
+        content: "";
+        background: url('img/c_code.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .menu-button {
+        position: absolute;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-button__line {
+        display: block;
+        background-color: red;
+        height: 5px;
+        width: 50px;
+        margin: 6px 20px;
+        border-radius: 20px;
+    }
+
+    .cont-cliente {
+        display: inline-block;
+        width: fit-content;
+    }
+
+    .ajust {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .cont-footer-left {
+        position: absolute;
+        display: block;
+        padding-top: 3%;
+    }
+
+    .cont-footer-right {
+        position: absolute;
+        display: block;
+        padding-top: 2%;
+    }
+
+    .cont-footer-center {
+        padding-top: 10%;
+    }
+
+    .card {
+        width: 20rem;
+        object-fit: cover;
+        border-color: black;
+        border-style: solid;
+        border-radius: 20px;
+    }
+
+    .card-img-top {
+        border-radius: 20px;
+        max-width: fit-content;
+    }
+
+    .greater-than {
+        position: relative;
+        visibility: visible;
+        object-fit: cover;
+        font-size: 30px;
+        color: red;
+    }
+
+    .circulo {
+        visibility: visible;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border-color: red;
+        border-style: solid;
+        border-radius: 100%;
+    }
+
+    .carousel-indicators button {
+        background-color: red;
+    }
+
+    .d-software {
+        width: 100%;
+        position: relative;
+        height: 70vh;
+    }
+
+    .d-software::after {
+        content: "";
+        background: url('img/c_view.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        box-shadow: -5px -5px 45px 5px black,
+            5px -5px 45px 5px black,
+            -5px 5px 45px 5px black,
+            5px 5px 45px 5px black;
+    }
+
+    .somos-fondo {
+        width: 100%;
+        position: relative;
+        height: 80vh;
+    }
+
+    .somos-fondo::after {
+        content: "";
+        background: url('img/somos.jpg');
+        background-size: 125vmin;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        position: absolute;
+    }
+
+    .contacto-fondo {
+        width: 100%;
+        position: relative;
+        height: 80vh;
+    }
+
+    .contacto-fondo::after {
+        content: "";
+        background: url('img/contacto.jpg');
+        background-size: 125vmin;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        position: absolute;
+    }
+
+    #slideportada,
+    .carousel-inner,
+    .carousel-portada,
+    .carousel-item.active {
+        height: 100vh;
+    }
+
+    #slider {
+        display: contents;
+        padding-top: 20px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    .slide:first-child {
+        display: block;
+    }
+
+    .slide-img {
+        position: absolute;
+        max-width: 100%;
+        max-height: auto;
+
+    }
+
+    .slid-content {
+        object-fit: cover;
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .btn-prev {
+        position: absolute;
+    }
+
+    .text-cont {
+        position: relative;
+        display: flexbox;
+    }
+
+    .contenido-text {
+        text-size-adjust: initial;
+        position: absolute;
+        font-size: 18px;
+        text-align: justify;
+        font-weight: bolder;
+        color: #0c126e;
+    }
+
+    .btn-contacto {
+        background-color: red;
+        color: white;
+        border-radius: 20px;
+        width: 60%;
+        height: 30px;
+        border-style: none;
+    }
+
+    .btn-contacto:hover {
+        background-color: #0c126e;
+    }
+
+    .input-contacto {
+        width: 60%;
+        height: 4vh;
+        background-color: #8ab5d8;
+        border-radius: 20px;
+        border-style: none;
+    }
+
+    .input-contacto::placeholder {
+        text-align: center;
+        color: white;
+    }
+
+    .textarea-contacto {
+        width: 60%;
+        height: 10vh;
+        background-color: #8ab5d8;
+        border-radius: 20px;
+        border-style: none;
+    }
+
+    .textarea-contacto::placeholder {
+        padding-top: 10%;
+        text-align: center;
+        color: white;
+    }
+
+    .hide-btn {
+        background: transparent;
+        border-style: none
+    }
+
+    .flechas {
+        position: relative;
+        visibility: visible;
+        object-fit: cover;
+        font-size: 30px;
+        color: white;
+    }
+
+    .circulo-contacto {
+        visibility: visible;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-color: red;
+        border-style: solid;
+        border-radius: 100%;
+    }
+}
